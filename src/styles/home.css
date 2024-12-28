@@ -1,15 +1,89 @@
 main{
     display: grid;
-    grid-template-rows: 20vh 40vh 1fr;
+    grid-template-rows: 800px 100px 250px 400px 1fr;
     align-items: center;
     justify-items: center;
-    background-color: white;
+    background-color: rgb(255, 237, 237);
 }
 
 .korean-symbol{
     height: 50px;
+    align-self: center;
 }
 
 #korean-symbol-small{
-    height: 65px;
+    height: 85px;
+}
+
+.tenet{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.taekwondo-tenets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-heading{
+    display: grid;
+    grid-template-rows: 1.5fr 1fr 1fr;
+    justify-items: center;
+}
+.second-home-heading{
+    font-size: 2rem;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.homepage-tagline{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.homepage-tagline-description{
+    text-align: center;
+    font-size: 2rem;
+    color: gray;
+}
+
+.join-now-btn {
+    text-align: center;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.5rem; /* Larger text for prominence */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Contrast text */
+    background: linear-gradient(45deg, #ff4500, #ff6347); /* Dynamic gradient */
+    border: none;
+    border-radius: 50px; /* Smooth, rounded edges */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth animation for hover effect */
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.join-now-btn:hover {
+    transform: scale(1.1); /* Slightly increase size */
+    background: linear-gradient(45deg, #ff6347, #ff4500); /* Reverse gradient */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow */
+}
+
+/* Focus Effect */
+.join-now-btn:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px #ff6347; /* Add glow effect */
+}
+
+/* Active Effect */
+.join-now-btn:active {
+    transform: scale(1.05); /* Slight shrink on click */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Reduce shadow */
 }

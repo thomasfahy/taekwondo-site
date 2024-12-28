@@ -3,4 +3,13 @@ main{
     grid-template-rows: 20vh 40vh 1fr;
     align-items: center;
     justify-items: center;
+    background-color: white;
+}
+
+.korean-symbol{
+    height: 50px;
+}
+
+#korean-symbol-small{
+    height: 65px;
 }

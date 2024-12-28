@@ -3,14 +3,14 @@ main{
     grid-template-rows: 800px;
     align-items: center;
     justify-items: center;
-    background-color: rgb(255, 237, 237);
+    background-color: rgb(235, 235, 235);
     height: 70vh;
 }
 
 .lower-homepage{
     background-color: #ffffff;
     display: grid;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 150px 200px 1fr;
     align-items: center;
     justify-items: center;
 }

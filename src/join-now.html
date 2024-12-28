@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-Up Form</title>
 </head>
 <body>
     <header>
@@ -21,11 +21,71 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>JOIN NOW</h1>
-            <p>Content goes here...</p>
-        </section>
-    </main>
+
+    <div class="mainContainer">
+        <div class="leftContainer">
+            <div class="banner">
+                <div class="logoText">Fahy</div>
+            </div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="preFormContainer">
+                <p class="preFormText">This is not a real online service! 
+                    You know you need something like 
+                    this in your life to help you realise 
+                    your deepest dreams. Sign up <em>now</em> to 
+                    get started</p>
+                <p class="preFormText">You <em>know</em> you want to</p>
+            </div>
+
+            <form class="signUpForm" action="blank" method="post">
+                <div class="formContainer">
+                    <p class="signUpText">Sign Up</p>
+                    <ul>
+                        <div class="formRow">
+                            <li>
+                                <label for="fname">*First Name</label>
+                                <input class="inputBox" minlength="2" maxlength="15" type="text" id="fname" name="first_name" required/>
+                            </li>
+                            <li>
+                                <label for="lname">*Last Name</label>
+                                <input class="inputBox" minlength="2" maxlength="15" type="text" id="lname" name="last_name" required/>
+                            </li>
+                        </div>
+                        <div class="formRow">
+                            <li>
+                                <label for="email">*Email</label>
+                                <input class="inputBox" type="email" id="mail" name="user_email" required/>
+                            </li>
+                            <li>
+                                <label for="phone">*Phone Number</label>
+                                <input class="inputBox" minlength="9" maxlength="15" pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}" type="text" id="phone" name="user_phone_number" required/>
+                            </li>
+                        </div>
+                        <div class="formRow">
+                            <li>
+                                <label for="password">*Password</label>
+                                <input class="inputBox" type="password" id="password" name="user_password" required/>
+                            </li>
+                            <li>
+                                <label for="confirmPassword">*Confirm Password</label>
+                                <input class="inputBox" type="password" id="confirmPassword" name="confirm_password" required/>
+                            </li>
+                        </div>
+
+                    </ul>
+                </div>
+                <button type="submit" class="submitButton">Create Account</button>
+                <div class="loginContainer">
+                    <p>Already have an account?</p>
+                    <a class="rickRoll" href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" target="_blank">Log In</a>
+                </div>
+            </form>
+            
+
+        </div>
+    </div>
+
 </body>
 </html>

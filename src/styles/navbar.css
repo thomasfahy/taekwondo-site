@@ -1,0 +1,88 @@
+/* styles/navbar.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh; /* 8% of the viewport height */
+    background-color: #333;
+    padding: 0 20px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.navbar .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #f4b400; /* Accent color */
+}
+
+/* Login button styling */
+.navbar .login-btn {
+    margin-left: auto; /* Push the login button to the right */
+    margin-right: 20px; /* Add space to the right */
+}
+
+.navbar .login-btn a {
+    text-decoration: none;
+    background-color: #f4b400;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links{
+    justify-self: end;
+}
+.navbar .login-btn a:hover {
+    background-color: #d99b00; /* Darken the button on hover */
+}
+
+main {
+    padding-top: 8vh; /* Prevent content from overlapping the navbar */
+    background: #f9f9f9;
+    height: 200vh; /* Just for scrolling demonstration */
+}

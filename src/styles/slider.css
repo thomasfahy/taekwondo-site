@@ -1,0 +1,51 @@
+.slider {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust this for the desired height of your slider */
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.dot:hover {
+    opacity: 1;
+}
+
+.dot.active {
+    opacity: 1;
+}

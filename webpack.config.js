@@ -4,7 +4,7 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/javascript/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
@@ -12,11 +12,32 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
-    watchFiles: ["./src/template.html"],
+    watchFiles: ["./src/home.html"],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/template.html",
+      template: "./src/home.html",
+      filename: "home.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/join-now.html",
+      filename: "join-now.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/curriculum.html",
+      filename: "curriculum.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/shop.html",
+      filename: "shop.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/contact.html",
+      filename: "contact.html"
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/login.html",
+      filename: "login.html"
     }),
   ],
   module: {

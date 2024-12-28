@@ -1,9 +1,18 @@
 main{
     display: grid;
-    grid-template-rows: 800px 100px 250px 400px 1fr;
+    grid-template-rows: 800px;
     align-items: center;
     justify-items: center;
     background-color: rgb(255, 237, 237);
+    height: 70vh;
+}
+
+.lower-homepage{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .korean-symbol{
@@ -87,3 +96,5 @@ main{
     transform: scale(1.05); /* Slight shrink on click */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Reduce shadow */
 }
+
+

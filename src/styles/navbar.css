@@ -80,9 +80,3 @@ header {
 .navbar .login-btn a:hover {
     background-color: #d99b00; /* Darken the button on hover */
 }
-
-main {
-    padding-top: 8vh; /* Prevent content from overlapping the navbar */
-    background: #f9f9f9;
-    height: 200vh; /* Just for scrolling demonstration */
-}

@@ -1,9 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 main{
     display: grid;
     grid-template-rows: 800px;
+    padding-top: 10rem;
     align-items: center;
     justify-items: center;
-    background-color: rgb(235, 235, 235);
+    background-image: url("../sliderimages/home-image.webp");
+    opacity: 1;
     height: 70vh;
 }
 
@@ -43,6 +49,7 @@ main{
     display: grid;
     grid-template-rows: 1.5fr 1fr 1fr;
     justify-items: center;
+    opacity: 1;
 }
 .second-home-heading{
     font-size: 2rem;
@@ -53,12 +60,16 @@ main{
 .homepage-tagline{
     font-size: 4rem;
     text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 800;
 }
 
 .homepage-tagline-description{
     text-align: center;
     font-size: 2rem;
-    color: gray;
+    color: rgb(204, 203, 203);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .join-now-btn {

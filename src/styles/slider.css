@@ -4,6 +4,7 @@
     width: 70%;
     height: 40vh; /* Adjust this for the desired height of your slider */
     overflow: hidden; /* Ensures that images don't overflow */
+    border-radius: 1.7rem;
 }
 
 /* Set up the container for the slides */
